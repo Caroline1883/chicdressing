@@ -64,3 +64,87 @@ body .header-logo a{
     background: #f6f6f6;
     padding-bottom: 20px;
 }
+
+/* Ajout des polices en local */
+
+@font-face {
+    font-family: 'Kalam';
+    font-style: normal;
+    font-weight: 400;
+    src: local('Kalam Font'),
+         url('./assets/Kalam/Kalam-Regular.woff2') format('woff2'),
+         url('./assets/Kalam/Kalam-Regular.woff') format('woff');
+  }
+
+  @font-face {
+    font-family: 'Playfair Display';
+    font-style: normal;
+    font-weight: 400;
+    src: local('Playfair Display Font'),
+         url('./assets/PlayfairDisplay/PlayfairDisplay-Regular.woff2') format('woff2'),
+         url('./assets/PlayfairDisplay/PlayfairDisplay-Regular.woff') format('woff');
+  }
+
+  @font-face {
+    font-family: 'Playfair Display';
+    font-style: normal;
+    font-weight: 700;
+    src: local('Playfair Display Font'),
+         url('./assets/PlayfairDisplay/PlayfairDisplay-Bold.woff2') format('woff2'),
+         url('./assets/PlayfairDisplay/PlayfairDisplay-Bold.woff') format('woff');
+  }
+
+  @font-face {
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 400;
+    src: local('Open Sans Font'),
+         url('./assets/OpenSans/OpenSans-Regular.woff2') format('woff2'),
+         url('./assets/OpenSans/OpenSans-Regular.woff') format('woff');
+  }
+
+  @font-face {
+    font-family: 'Open Sans';
+    font-style: italic;
+    font-weight: 400;
+    src: local('Open Sans Font'),
+         url('./assets/OpenSans/OpenSans-Italic.woff2') format('woff2'),
+         url('./assets/OpenSans/OpenSans-Italic.woff') format('woff');
+  }
+
+  @font-face {
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 600;
+    src: local('Open Sans Font'),
+         url('./assets/OpenSans/OpenSans-SemiBold.woff2') format('woff2'),
+         url('./assets/OpenSans/OpenSans-SemiBold.woff') format('woff');
+  }
+
+  @font-face {
+    font-family: 'Open Sans';
+    font-style: italic;
+    font-weight: 600;
+    src: local('Open Sans Font'),
+         url('./assets/OpenSans/OpenSans-SemiBoldItalic.woff2') format('woff2'),
+         url('./assets/OpenSans/OpenSans-SemiBoldItalic.woff') format('woff');
+  }
+
+  @font-face {
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 700;
+    src: local('Open Sans Font'),
+         url('./assets/OpenSans/OpenSans-Bold.woff2') format('woff2'),
+         url('./assets/OpenSans/OpenSans-Bold.woff') format('woff');
+  }
+
+  @font-face {
+    font-family: 'Open Sans';
+    font-style: italic;
+    font-weight: 700;
+    src: local('Open Sans Font'),
+         url('./assets/OpenSans/OpenSans-BoldItalic.woff2') format('woff2'),
+         url('./assets/OpenSans/OpenSans-BoldItalic.woff') format('woff');
+  }
+  
