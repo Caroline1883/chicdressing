@@ -2,22 +2,32 @@
  * External dependencies
  */
 import { __ } from '@wordpress/i18n';
-import { clamp } from 'lodash';
 import PropTypes from 'prop-types';
 import { RangeControl, ToggleControl } from '@wordpress/components';
+
+const clamp = ( number, boundOne, boundTwo ) => {
+	if ( ! boundTwo ) {
+		return Math.max( number, boundOne ) === boundOne ? number : boundOne;
+	} else if ( Math.min( number, boundOne ) === number ) {
+		return boundOne;
+	} else if ( Math.max( number, boundTwo ) === number ) {
+		return boundTwo;
+	}
+	return number;
+};
 
 /**
  * A combination of range controls for product grid layout settings.
  *
- * @param {Object} props Incoming props for the component.
- * @param {number} props.columns
- * @param {number} props.rows
+ * @param {Object}            props               Incoming props for the component.
+ * @param {number}            props.columns
+ * @param {number}            props.rows
  * @param {function(any):any} props.setAttributes Setter for block attributes.
- * @param {string} props.alignButtons
- * @param {number} props.minColumns
- * @param {number} props.maxColumns
- * @param {number} props.minRows
- * @param {number} props.maxRows
+ * @param {boolean}           props.alignButtons
+ * @param {number}            props.minColumns
+ * @param {number}            props.maxColumns
+ * @param {number}            props.minRows
+ * @param {number}            props.maxRows
  */
 const GridLayoutControl = ( {
 	columns,
@@ -57,13 +67,13 @@ const GridLayoutControl = ( {
 			/>
 			<ToggleControl
 				label={ __(
-					'Align Last Block',
+					'Align the last block to the bottom',
 					'woocommerce'
 				) }
 				help={
 					alignButtons
 						? __(
-								'The last inner block will be aligned vertically.',
+								'Align the last block to the bottom.',
 								'woocommerce'
 						  )
 						: __(

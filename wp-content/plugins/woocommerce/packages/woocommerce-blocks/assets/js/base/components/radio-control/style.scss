@@ -1,9 +1,11 @@
 .wc-block-components-radio-control__option {
+	@include reset-color();
 	@include reset-typography();
 	display: block;
 	margin: em($gap) 0;
-	padding: 0 0 0 em($gap-largest);
+	padding: 0 0 0 em($gap-larger);
 	position: relative;
+	cursor: pointer;
 
 	&:first-child {
 		margin-top: 0;
@@ -44,7 +46,7 @@
 	// Currently, max() CSS function calls need to be wrapped with unquote.
 	// See: https://github.com/sass/sass/issues/2378#issuecomment-367490840
 	// These values should be the same as the control input height.
-	line-height: unquote("max(1.5rem, 24px)");
+	line-height: string.unquote("max(1.5rem, 24px)");
 }
 
 .wc-block-components-radio-control__description,
@@ -70,6 +72,7 @@
 		left: 0;
 		top: 50%;
 		transform: translate(0, -50%);
+		cursor: pointer;
 
 		&:checked::before {
 			background: #000;
