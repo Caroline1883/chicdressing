@@ -5,6 +5,7 @@ WP-Cache Config Sample File
 See wp-cache.php for author details.
 */
 
+$dismiss_readable_warning = 1;
 $wp_cache_home_path = '/chicdressing/';
 $wp_cache_slash_check = 1;
 $cache_page_secret = 'bb3dd5d5ae726dabac50dc387a2d684d';
