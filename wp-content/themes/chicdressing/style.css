@@ -15,8 +15,8 @@ Text Domain:	 chicdressing
 */
 
 
-body .page-content, .page-content select, .page-content input, .page-content textarea, .page-content .post-author a, .page-content .ashe-widget a, .page-content .comment-author {
-    color: #a5a5a5;
+body .page-content, .page-content select, .page-content input, .page-content textarea, .page-content .post-author a, .page-content .ashe-widget a, .page-content .comment-author, .post-date {
+    color: #030303;
     font-size: 12px;
 }
 
@@ -42,6 +42,8 @@ body .header-logo a{
     padding: 12px;
     font-size: 14px;
 }
+
+
 
 #featured-slider{
     margin-bottom:30px;
