@@ -226,20 +226,20 @@ function ashe_true_false( $option ) {
 		.rpwwt-post-categories,
 		.rpwwt-post-date,
 		.rpwwt-post-comments-number {
-			color: #a1a1a1;
+			color: #030303;
 		}
 
 		.page-content input::-webkit-input-placeholder { /* Chrome/Opera/Safari */
-		  color: #a1a1a1;
+		  color: #030303;
 		}
 		.page-content input::-moz-placeholder { /* Firefox 19+ */
-		  color: #a1a1a1;
+		  color: #030303;
 		}
 		.page-content input:-ms-input-placeholder { /* IE 10+ */
-		  color: #a1a1a1;
+		  color: #030303;
 		}
 		.page-content input:-moz-placeholder { /* Firefox 18- */
-		  color: #a1a1a1;
+		  color: #030303;
 		}
 		
 	
